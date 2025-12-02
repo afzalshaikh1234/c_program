@@ -1,0 +1,28 @@
+/* Name: Shaikh Afzal
+branch year: computer engineering/F.E
+UIN:251P120
+Roll no : 42
+DIV_D */
+
+int main() {
+    int a[100], n, i;
+    int *p;
+
+    printf("Enter number of elements: ");
+    scanf("%d", &n);
+
+    printf("Enter %d elements:\n", n);
+    for (i = 0; i < n; i++) {
+        scanf("%d", &a[i]);
+    }
+
+    p = &a[n - 1];
+
+    printf("Array in reverse order:\n");
+    for (i = n - 1; i >= 0; i--) {
+        printf("%d ", *p);
+        p--;
+    }
+
+    return 0;
+}
